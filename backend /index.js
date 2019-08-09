@@ -3,8 +3,8 @@ const url = require('url');
 const fs = require('fs');
 const express = require('express')
 const app = express()
-
-
+const router = express.Router();
+              
 const server = http.createServer(function (req, res) {
   const q = url.parse(req.url, true);
   const filename = "." + q.pathname;
